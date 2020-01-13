@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:layoutDirection="ltr"
+                android:background="@drawable/greengradientbutton">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="اطلاعات کاربری مدیریت"
+                    android:layout_gravity="center"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/white"
+                    android:gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="25dp"/>
+                <ImageButton
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/backpng"
+                    android:id="@+id/btnbacklogin"
+                    android:scaleType="fitCenter"
+                    android:background="@color/transparent"/>
+            </RelativeLayout>
+            <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+                android:id="@+id/progillnessinfo"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/circleimgofjudgemanagment"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/back"
+                    app:civ_border_width="4dp"
+                    app:civ_border_color="#3949AB"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="10dp"/>
+                <TextView
+                    android:id="@+id/txtnameofjudgemanagment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="22dp"
+                    android:textColor="#000"
+                    android:layout_alignBottom="@+id/imgcircleuser"
+                    android:text="توحید حقیقی"/>
+                <TextView
+                    android:id="@+id/txtnumberofjudgemanagment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="22dp"
+                    android:textColor="#000"
+                    android:layout_alignBottom="@+id/imgcircleuser"
+                    android:text="۰۹۱۴۴۹۶۷۹۴۱"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="توضیحات"
+                        android:layout_margin="5dp"/>
+                    <EditText
+                        android:id="@+id/txtdescriptionofjudgemanagment"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:hint="توضیحات را وارد کنید"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:inputType="text"
+                        android:minLines="3"
+                        android:maxLength="3"
+                        android:text=""
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"/>
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="شهر خود را انتخاب کنید"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+                <Spinner
+                    android:id="@+id/spnofjudgemanagment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp">
+
+                </Spinner>
+
+                <Button
+                    android:id="@+id/btnupdateofjudgemanagment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ویرایش اطلاعات"
+                    android:textColor="@color/white"
+                    android:background="@color/darkred"
+                    android:layout_marginTop="20dp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

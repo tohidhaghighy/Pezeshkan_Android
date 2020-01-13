@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ListDoctorActivity"
+    tools:showIn="@layout/app_bar_list_doctor">
+
+    <FrameLayout
+        android:id="@+id/framlayoutmanager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/doctorrecycleben"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+<Button
+    android:id="@+id/btnrezervejudgetime"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:text="رزرو وقت از کارشناس آزمایشگاه"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:background="@color/darkred"
+    android:textColor="@color/white"
+    android:textSize="20dp"
+    android:padding="10dp"/>
+
+</android.support.constraint.ConstraintLayout>

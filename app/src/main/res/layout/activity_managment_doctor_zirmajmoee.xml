@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:background="@drawable/greengradientbutton">
+
+                <ImageButton
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/backpng"
+                    android:id="@+id/btnbacklogin"
+                    android:scaleType="fitCenter"
+                    android:background="@color/transparent"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="کد معرف"
+                    android:layout_gravity="center"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/white"
+                    android:gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="15dp"/>
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/icons"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/txtcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text=""
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:lines="2"
+                    android:paddingLeft="10dp"
+                    android:maxLines="2"
+                    android:textColor="@color/darkred"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="لیست زیر مجموعه شما :"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:lines="2"
+                    android:paddingLeft="10dp"
+                    android:maxLines="2"
+                    android:textSize="20dp"/>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvdoctorzirmajmoee"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chatback">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layoutDirection="ltr"
+        android:background="@color/colorPrimary">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="لیست داروها"
+                android:layout_gravity="right"
+                android:textSize="18dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="لیست داروها"
+                android:layout_gravity="right"
+                android:textSize="15dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"/>
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imgcircleofdoctor"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/back"
+            app:civ_border_width="5dp"
+            android:layout_marginLeft="90dp"
+            app:civ_border_color="#FFECEFF1"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="15dp"/>
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/backpng"
+            android:id="@+id/btnbacklogin"
+            android:scaleType="fitCenter"
+            android:background="@color/colorPrimary"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:text="hi man, how are you?"
+            android:background="@drawable/rounded_rectangle_orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="4dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="right"
+            android:background="@drawable/rounded_rectancle_green">
+
+
+            <TextView
+                android:text="hi man, how are you?"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textColor="#ffffff"
+                android:layout_gravity="right"
+                android:layout_marginTop="4dp"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/paperclip"
+                android:layout_gravity="right"
+                android:padding="10dp"
+                android:layout_marginRight="30dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button1"
+            android:layout_centerHorizontal="true"
+            android:text="Stop Music" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="157dp"
+            android:text="Play Music" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:layoutDirection="rtl"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/shadow_button">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="click"
+            android:src="@drawable/paperclip"
+            android:padding="5dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shadow_bottom_item"
+            android:hint="ارسال پیام "
+            android:paddingRight="5dp"
+            android:layout_margin="5dp"
+            android:inputType="text"
+            android:imeOptions="actionSend"
+            />
+
+    </LinearLayout>
+
+    <com.devlomi.record_view.RecordView
+        android:id="@+id/record_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/record_button"
+        app:slide_to_cancel_arrow="@drawable/recv_ic_arrow"
+        app:slide_to_cancel_arrow_color="#000000"
+        app:slide_to_cancel_bounds="8dp"
+        app:slide_to_cancel_margin_right="10dp"
+        app:slide_to_cancel_text="Slide To Cancel"
+        app:counter_time_color="#ff0000"
+        android:layout_margin="5dp"/>
+
+    <com.devlomi.record_view.RecordButton
+        android:id="@+id/record_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/recv_bg_mic"
+        android:scaleType="centerInside"
+        app:mic_icon="@drawable/recv_ic_mic_white"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="8dp"/>
+
+
+
+</RelativeLayout>

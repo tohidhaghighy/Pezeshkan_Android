@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/shadow_bottom_item"
+    android:layoutDirection="rtl"
+    android:padding="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/txtdatevisit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="مشخصات"
+            android:paddingLeft="10dp"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/txtdesvicit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="توضیحات محصول"
+            android:paddingLeft="10dp"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/btnaddvisittime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="گرفتن وقت ویزیت"
+            android:textColor="@color/white"
+            android:paddingLeft="10dp"
+            android:layout_margin="5dp"
+            android:background="@color/darkgreen"/>
+    </LinearLayout>
+
+</LinearLayout>

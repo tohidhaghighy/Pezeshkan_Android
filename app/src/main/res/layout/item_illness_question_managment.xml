@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:background="@drawable/shadow_bottom_item"
+    android:padding="2dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:text="سوال:"
+            android:textSize="18dp"/>
+        <TextView
+            android:id="@+id/txtquestionofquestionlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textDirection="rtl"
+            android:layout_margin="10dp"
+            android:text="docotor name"
+            android:minLines="2"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/txtanswerofquestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textDirection="rtl"
+            android:layout_margin="10dp"
+            android:hint="جواب سوال را وارد کنید"
+            android:minLines="2"
+            android:background="@drawable/shadow_bottom_item"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnsendanswerttoserverquestion"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/darkred"
+            android:textColor="@color/white"
+            android:text="درج جواب"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+</LinearLayout>

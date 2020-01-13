@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:background="@drawable/greengradientbutton">
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/backpng"
+                    android:id="@+id/btnbacklogin"
+                    android:scaleType="fitCenter"
+                    android:background="@color/transparent"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ثبت نام با موبایل"
+                    android:layout_gravity="center"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/white"
+                    android:gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="15dp"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/icons"
+                    android:layout_gravity="center_horizontal"/>
+
+                <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+                    android:id="@+id/progressbarregister"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true"
+                    />
+
+                <EditText
+                    android:id="@+id/txtnameregister"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:hint="نام را وارد کنید"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:drawableLeft="@drawable/ic_user_black_24dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="5dp"/>
+                <EditText
+                    android:id="@+id/txtmobileregister"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:hint="موبایل را وارد کنید"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:drawableLeft="@drawable/ic_user_black_24dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="5dp"/>
+
+                <EditText
+                    android:id="@+id/txtpasswordregister"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:hint="پسورد را وارد کنید"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:inputType="textPassword"
+                    android:maxLength="25"
+                    android:drawableLeft="@drawable/ic_https_black_24dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="5dp"/>
+
+                <EditText
+                    android:id="@+id/txtrepasswordregister"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:hint="تکرار پسورد را وارد کنید"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:maxLength="25"
+                    android:inputType="textPassword"
+                    android:drawableLeft="@drawable/ic_https_black_24dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="5dp"/>
+
+                <Spinner
+                    android:id="@+id/spineercity"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:padding="20dp"
+                    android:foregroundGravity="center"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                </Spinner>
+
+                <Button
+                    android:id="@+id/btnregistermobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="ثبت نام"
+                    android:textColor="@color/white"
+                    android:background="@drawable/yellowgradientbuttom"
+                    android:textSize="19dp"
+                    android:layout_margin="5dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

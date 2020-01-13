@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoskheManagmentIllnessActivity"
+    android:orientation="vertical"
+    android:layoutDirection="rtl">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:layoutDirection="ltr"
+                android:background="@drawable/greengradientbutton">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="مشاهده نسخه"
+                    android:layout_gravity="center"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/white"
+                    android:gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="25dp"/>
+                <ImageButton
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/backpng"
+                    android:id="@+id/btnbacklogin"
+                    android:scaleType="fitCenter"
+                    android:background="@color/transparent"/>
+            </RelativeLayout>
+            <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+                android:id="@+id/progressnoskheinfo"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                />
+            <Button
+                android:id="@+id/sendnoskhetopharmacymanagment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/darkgreen"
+                android:textColor="@color/white"
+                android:text="ارسال نسخه به داروخانه"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/shadow_bottom_item"
+                android:layoutDirection="ltr"
+                android:padding="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/illnessimgcirclefornoskhe"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:src="@drawable/back"
+                    app:civ_border_width="5dp"
+                    app:civ_border_color="#FFECEFF1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/btnadddoctoritem">
+                    <TextView
+                        android:id="@+id/txtillnessnamefornoskhe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:textDirection="rtl"
+                        android:text="توحید حقیقی"
+                        android:textSize="25dp"/>
+                    <TextView
+                        android:id="@+id/txtillnessdatefornoskhe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:textDirection="rtl"
+                        android:text="تاریخ : ۱۳۹۸/9/8"
+                        android:textSize="20dp"/>
+                    <TextView
+                        android:id="@+id/txtillnesstypebimefornoskhe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:textDirection="rtl"
+                        android:text="بیمه : سلامت - ۳۴۱۲۳۴۱۲۳۴ "/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/shadow_bottom_item"
+                android:layoutDirection="ltr"
+                android:padding="10dp">
+
+                <ImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/header"
+                    android:layout_marginLeft="20dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/noskhemanagmentlistrecycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom_item"
+                    android:orientation="horizontal"
+                    android:layoutDirection="ltr"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="نسخه بیمار فقط با ارايه اصل مدارک کارت ملی و دفترچه بیمه قابل تحویل توسط داروخانه است."
+                        android:textSize="20dp" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadow_bottom_item"
+                    android:orientation="horizontal"
+                    android:layoutDirection="ltr"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="نسخه بیمار موقت و نیاز به مراجعه حضوری دارد."
+                        android:textSize="20dp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/shadow_bottom_item"
+                android:layoutDirection="ltr"
+                android:padding="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/doctorimgcirclefornoskhe"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:src="@drawable/back"
+                    app:civ_border_width="5dp"
+                    app:civ_border_color="#FFECEFF1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/txtdoctornameofnoskhe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:textDirection="rtl"
+                        android:text="دکتر علی عزیزی"
+                        android:textSize="25dp"/>
+                    <TextView
+                        android:id="@+id/txtdoctornezampezeshkifornoskhe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:textDirection="rtl"
+                        android:text="نظام پزشکی : ۱۳۴۲۴۱۲۴۱"
+                        android:textSize="20dp"/>
+                    <TextView
+                        android:id="@+id/txtdoctorpeigirifornoskhe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:textDirection="rtl"
+                        android:text="کد پیگیری : ۸۰۹۱۰۳۱۹۳۱ژ۴۳"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

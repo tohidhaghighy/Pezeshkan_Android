@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:background="@drawable/greengradientbutton">
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/backpng"
+                    android:id="@+id/btnbacklogin"
+                    android:scaleType="fitCenter"
+                    android:background="@color/transparent"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="دریافت کد فعال سازی"
+                    android:layout_gravity="center"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/white"
+                    android:gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="20dp"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/icons"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="کد ۶ رقمی برای شما ارسال شد آن را برای تایید هویت در زیر وارد کنید"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:lines="2"
+                    android:paddingLeft="10dp"
+                    android:maxLines="2"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <EditText
+                    android:id="@+id/txtcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:hint="کد دریافتی را وارد کنید"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:drawableLeft="@drawable/ic_dashboard_black_24dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txttimer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/costtimevisitlis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_below="@id/txttimevisitlis"
+                android:background="@drawable/shadow_bottom_item"
+                android:layoutDirection="rtl">
+                <Button
+                    android:id="@+id/btnrepeatsendcode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="کد را دریافت نکردم ؟"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:layout_margin="5dp"/>
+
+                <Button
+                    android:id="@+id/btnacceptcode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="تایید کد دریافتی"
+                    android:paddingLeft="10dp"
+                    android:layout_margin="5dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrolldoctordetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/darkblueimage"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/greengradientbutton"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imgcircleuser"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/back"
+            app:civ_border_width="5dp"
+            app:civ_border_color="#FFECEFF1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:paddingBottom="30dp"/>
+        <TextView
+            android:id="@+id/txtnameprofileillness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="22dp"
+            android:textColor="@color/white"
+            android:layout_alignBottom="@+id/imgcircleuser"
+            android:text="توحیر حقیقی"/>
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/backpng"
+            android:id="@+id/btnbacklogin"
+            android:scaleType="fitCenter"
+            android:background="@color/transparent"/>
+        <LinearLayout
+            android:id="@+id/namelinerlitem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/darkblueimage"
+            android:layoutDirection="rtl"
+            android:paddingRight="10dp"
+            android:padding="20dp"
+            android:background="@drawable/shadow_bottom_item">
+            <TextView
+                android:id="@+id/txtmobileprofileillness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="موبایل را وارد کنید"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_marginTop="5dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="قد را وارد کنید"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_marginTop="5dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="وزن را وارد کنید"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_marginTop="5dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="قند خون را وارد کنید"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_marginTop="5dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="فشارخون را وارد کنید"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_marginTop="5dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="بیمه را وارد کنید"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="5dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="تاریخ اتمام بیمه را وارد کنید"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="5dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ویرایش اطلاعات"
+                android:layout_marginTop="10dp"
+                android:background="@color/darkred"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

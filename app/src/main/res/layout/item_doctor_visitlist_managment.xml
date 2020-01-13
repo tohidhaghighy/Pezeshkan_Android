@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:background="@drawable/shadow_bottom_item"
+    android:padding="2dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:text="نام بیمار:"
+            android:textSize="18dp"/>
+        <TextView
+            android:id="@+id/txtdoctornameitemmanagmentdoctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:text="docotor name"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:text="کد:"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/txtdoctorparvandecodeitemmanagmentdoctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:text="7868787687/76"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:layout_margin="10dp"
+            android:text="تاریخ و ساعت :"
+            android:textSize="18dp"/>
+        <TextView
+            android:id="@+id/txtdateitemmanagmentdoctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:layout_margin="10dp"
+            android:text="۱۳۹۸.۲.۵"
+            android:textSize="18dp"
+            android:textColor="@color/darkgreen"/>
+        <TextView
+            android:id="@+id/txttimeitemmanagmentdoctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:layout_margin="10dp"
+            android:text="-ساعت ۵"
+            android:textSize="18dp"
+            android:textColor="@color/darkgreen"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnchatroomitemmanagmentdoctor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="چت روم"
+            android:layout_gravity="center"
+            android:background="@color/darkred"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/btnquestionitemmanagmentdoctor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/darkred"
+            android:textColor="@color/white"
+            android:text="جواب سوال"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/btnnoskheitemmanagmentdoctor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/darkred"
+            android:textColor="@color/white"
+            android:text="نسخه بیمار"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/timeslinerlitem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layoutDirection="rtl"
+        android:layout_marginTop="40dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="22dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/black"
+            android:text="رزرو وقت ویزیت " />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/timevisitlis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_below="@id/timeslinerlitem"
+        android:background="@drawable/shadow_bottom_item"
+        android:layoutDirection="rtl">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="تاریخ"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="توضیحات "
+            android:paddingLeft="10dp"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="تعداد باقی مانده"
+            android:paddingLeft="10dp"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/txttimevisitlis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_below="@id/timevisitlis"
+        android:background="@drawable/shadow_bottom_item"
+        android:layoutDirection="rtl">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1395/01/04"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="از ساعت ۵ تا ۷ "
+            android:paddingLeft="10dp"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="۵ نفر"
+            android:paddingLeft="10dp"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/costtimevisitlis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_below="@id/txttimevisitlis"
+        android:background="@drawable/shadow_bottom_item"
+        android:layoutDirection="rtl">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="مبلغ قابل پرداخت :"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="۱۰۰۰۰ تومان"
+            android:paddingLeft="10dp"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/btntimevisitlis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_below="@id/costtimevisitlis"
+        android:background="@drawable/shadow_bottom_item"
+        android:layoutDirection="rtl">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@color/darkred"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:text="پرداخت کن "/>
+    </LinearLayout>
+
+</RelativeLayout>

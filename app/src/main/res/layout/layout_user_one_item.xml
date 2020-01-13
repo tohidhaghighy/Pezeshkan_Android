@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/shadow_bottom_item"
+    android:layoutDirection="rtl"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imgcircleuser"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/back"
+        app:civ_border_width="5dp"
+        app:civ_border_color="#FFECEFF1"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/btnadddoctoritem">
+        <TextView
+            android:id="@+id/txtname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textDirection="rtl"
+            android:text="توحید حقیقی"
+            android:textSize="22dp"/>
+        <TextView
+            android:id="@+id/txttakhasos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textDirection="rtl"
+            android:text="دندان پزشک"
+            android:textSize="18dp"/>
+        <TextView
+            android:id="@+id/txtdescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textDirection="rtl"
+            android:text="توضیحات "
+            android:textSize="15dp"
+            android:ellipsize="end"
+            android:maxLines="1"/>
+    </LinearLayout>
+
+
+</LinearLayout>

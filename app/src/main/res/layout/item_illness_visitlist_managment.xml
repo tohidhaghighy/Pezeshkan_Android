@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:background="@drawable/shadow_bottom_item"
+    android:padding="2dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:text="نام دکتر:"
+        android:textSize="18dp"/>
+    <TextView
+        android:id="@+id/txtdoctornameitemmanagmentillness"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:text="docotor name "/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:text="شماره نوبت:"
+        android:textSize="18dp"/>
+    <Button
+        android:id="@+id/txtnobatitemmanagmentillness"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="30dp"
+        android:text="۳"
+        android:textSize="22dp"
+        android:background="@color/darkred"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:textColor="@color/white"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:layout_margin="10dp"
+            android:text="تاریخ و ساعت :"
+            android:textSize="18dp"/>
+        <TextView
+            android:id="@+id/txtdateitemmanagmentillness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:layout_margin="10dp"
+            android:text="۱۳۹۸.۲.۵"
+            android:textSize="18dp"
+            android:textColor="@color/darkgreen"/>
+        <TextView
+            android:id="@+id/txttimeitemmanagmentillness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:layout_margin="10dp"
+            android:text="-ساعت ۵"
+            android:textSize="18dp"
+            android:textColor="@color/darkgreen"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnchatroomitemmanagmentillness"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="چت روم"
+            android:layout_gravity="center"
+            android:background="@color/darkred"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/btnnoskheitemmanagmentillness"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/darkred"
+            android:textColor="@color/white"
+            android:text="نسخه بیمار"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+</LinearLayout>

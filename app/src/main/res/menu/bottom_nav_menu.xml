@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_city"
+        android:icon="@drawable/ic_art_track_black_24dp"
+        android:title="انتخاب شهر" />
+    <item
+        android:id="@+id/navigation_judge"
+        android:icon="@drawable/ic_local_library_black_24dp"
+        android:title="کارشناس آزمایشگاه" />
+    <item
+        android:id="@+id/navigation_pharmacy"
+        android:icon="@drawable/ic_local_pharmacy_black_24dp"
+        android:title="داروخانه" />
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/Home_Bottommenu" />
+
+
+</menu>

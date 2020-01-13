@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "923827524757",
+    "firebase_url": "https://salamatappdudkani.firebaseio.com",
+    "project_id": "salamatappdudkani",
+    "storage_bucket": "salamatappdudkani.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:923827524757:android:ae35965498a425c2",
+        "android_client_info": {
+          "package_name": "com.example.salamatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "923827524757-7npbo6a3o3k2h65ndfn6hck2ivkuke3k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.salamatapp",
+            "certificate_hash": "f21350debd010b221a9f544633bce28a3cada9d9"
+          }
+        },
+        {
+          "client_id": "923827524757-e9delavsca35v5mudujokb0gd5q3q2t8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJ1mrIeFcn_NnY_agPCRDsTHwY3RkcPKw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "923827524757-e9delavsca35v5mudujokb0gd5q3q2t8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
