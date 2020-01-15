@@ -13,3 +13,8 @@ Use Library
 
 Show Doctor list for users and user can take a visit time
 chat online in this time with doctor
+
+Send prescription illness to drogstore
+Chat illness and dragstore
+
+Chat illness with Laboratory expert
